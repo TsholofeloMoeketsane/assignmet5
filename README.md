@@ -619,37 +619,91 @@ To install extensions, click on the Extensions icon in the Activity Bar on the s
       - Use the Debug toolbar to control the execution of your program (Pause, Continue, Step Over, Step Into, Step Out, etc.).
 
    Key Debugging Features in VS Code
-Variable Watch:
 
-View and monitor the values of variables in your code as you step through it.
-Call Stack:
+   1. Variable Watch:
 
-See the current call stack, allowing you to navigate through the function calls that led to the current point in your code.
-Debug Console:
+   - View and monitor the values of variables in your code as you step through it.
 
-Interact with your running code and execute commands in the Debug Console (REPL), useful for evaluating expressions and executing statements.
-Breakpoints:
+   2. Call Stack:
 
-Set breakpoints in your code to pause execution and inspect the state of variables and objects at that point.
-Conditional Breakpoints:
+   - See the current call stack, allowing you to navigate through the function calls that led to the current point in your code.
+   
+   3. Debug Console:
 
-Specify conditions under which a breakpoint should trigger, enhancing control over when debugging halts.
-Step Controls:
+   - Interact with your running code and execute commands in the Debug Console (REPL), useful for evaluating expressions and executing statements.
 
-Navigate through your code step by step (Step Over, Step Into, Step Out) to understand its flow and behavior.
-Watch Expressions:
+   4. Breakpoints:
 
-Monitor specific variables or expressions continuously while debugging, even if they are not in the current scope.
-Exception Handling:
+   - Set breakpoints in your code to pause execution and inspect the state of variables and objects at that point.
 
-Configure how VS Code handles exceptions, allowing you to break execution on thrown exceptions or specific types of exceptions.
+   5. Conditional Breakpoints:
+
+   - Specify conditions under which a breakpoint should trigger, enhancing control over when debugging halts.
+   
+   6. Step Controls:
+
+   - Navigate through your code step by step (Step Over, Step Into, Step Out) to understand its flow and behavior.
+
+   7. Watch Expressions:
+
+   - Monitor specific variables or expressions continuously while debugging, even if they are not in the current scope.
+
+   8. Exception Handling:
+
+   - Configure how VS Code handles exceptions, allowing you to break execution on thrown exceptions or specific types of exceptions.
 
 10. Using Source Control:
-    - How can users integrate Git with VS Code for version control? Describe the process of initializing a repository, making commits, and pushing changes to GitHub.
+    
+    Integrating Git with VS Code
 
- Submission Guidelines:
-- Your answers should be well-structured, concise, and to the point.
-- Provide screenshots or step-by-step instructions where applicable.
-- Cite any references or sources you use in your answers.
-- Submit your completed assignment by 1st July 
+   1. Install Git
+   - Ensure that Git is installed on your system. You can download it from git-scm.com and follow the installation instructions.
+
+   2. Open Your Project in VS Code
+   - Open your project folder in VS Code by selecting File > Open Folder.
+
+   Initializing a Git Repository
+
+   1. Open Source Control View:
+
+   - Click on the Source Control icon in the Activity Bar on the side of the window, or press Ctrl+Shift+G (Windows) to open the Source Control view.
+
+   2. Initialize Repository:
+
+   - If your project folder is not already a Git repository, click on the Initialize Repository button.
+   - VS Code will initialize a Git repository in your project folder. You should now see the Source Control view populated with your project files.
+
+   Making Commits
+
+   1. Staging Changes:
+
+   - Changes to your files will appear in the Source Control view under the Changes section.
+   - To stage changes, click the + icon next to the files you want to stage, or click Stage All Changes at the top.
+
+   2. Writing a Commit Message:
+
+   - After staging the changes, write a commit message in the input box at the top of the Source Control view.
+
+   3. Committing Changes:
+
+   - Click the checkmark icon (✔️) or press Ctrl+Enter (Windows).
+
+   Pushing Changes to GitHub
+
+   1. Creating a Repository on GitHub:
+
+   - Go to GitHub and create a new repository. Copy the repository URL (e.g., https://github.com/username/repository.git).
+
+   2. Adding the Remote:
+
+   - Open the terminal in VS Code by pressing Ctrl+ (backtick).
+   - Add the remote URL by running the following command:
+      git remote add origin https://github.com/username/repository.git
+
+   3. Pushing Changes:
+
+   - Push your commits to GitHub by running:
+      git push -u origin master
+   - This command pushes your commits to the master branch of the remote repository and sets the upstream branch.
+
 
